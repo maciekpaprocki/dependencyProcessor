@@ -6,7 +6,6 @@ Instalation
 -------------------
 
 ```bash
-
 	composer install maciekpaprocki/imageProfessor
 
 ```
@@ -20,7 +19,6 @@ Usage
 Define image processor name, paths and transformation.
 
 ```php
-
 	use ImageProfessor\ImageProfessor;
 
 	var $thumbnail = New ImageProfessor('thumbnail','assets/*',function($image){
@@ -38,7 +36,6 @@ Because we are using Imanee package for image tranformation, you have whole arra
 To get link to image just use:
 
 ```php
-
 	echo $thumbnail->getUrl('path/to.jpg');
 
 ```
@@ -46,7 +43,6 @@ To get link to image just use:
 to process all images use (require app autoloader):
 
 ```php
-
 	$thumbnail->process();
 
 ```
@@ -54,7 +50,6 @@ to process all images use (require app autoloader):
 to process one image use (require app autoloader):
 
 ```php
-
 	$thumbnail->process('path/to.jpg');
 
 ```
