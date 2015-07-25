@@ -17,7 +17,7 @@ Usage
 
 Define image processor name, paths and transformation.
 
-.. code-block:: php
+'''php
 
 	use ImageProfessor\ImageProfessor;
 
@@ -28,6 +28,8 @@ Define image processor name, paths and transformation.
 
 
 	},'cache');
+
+'''
 
 Because we are using Imanee package for image tranformation, you have whole array of possibilities. 
 
@@ -50,9 +52,9 @@ to process one image use (require app autoloader):
 .. code-block: php
 
 	$thumbnail->process('path/to.jpg');
-	
+
 
 
 Future api 
 ---------------------
-Bescause it's extremally annoying to each time get all variables for one file it's better to just us
+Bescause it's extremally annoying to each time get all variables for one file it's better to just use 
