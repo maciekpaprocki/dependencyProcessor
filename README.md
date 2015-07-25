@@ -5,9 +5,11 @@ Unfortunately most of the image processors built-in in standard cms's are not go
 Instalation
 -------------------
 
-.. code-block:: bash
+```bash
 
 	composer install maciekpaprocki/imageProfessor
+
+```
 
 Be sure that you have imagemagick(preferred)||GD installed on your server. 
 
@@ -17,7 +19,7 @@ Usage
 
 Define image processor name, paths and transformation.
 
-'''php
+```php
 
 	use ImageProfessor\ImageProfessor;
 
@@ -29,31 +31,33 @@ Define image processor name, paths and transformation.
 
 	},'cache');
 
-'''
+```
 
 Because we are using Imanee package for image tranformation, you have whole array of possibilities. 
 
 To get link to image just use:
 
-.. code-block: php
+```php
 
 	echo $thumbnail->getUrl('path/to.jpg');
 
+```
 
 to process all images use (require app autoloader):
 
-.. code-block: php
+```php
 
 	$thumbnail->process();
 
+```
 
 to process one image use (require app autoloader):
 
-.. code-block: php
+```php
 
 	$thumbnail->process('path/to.jpg');
 
-
+```
 
 Future api 
 ---------------------
