@@ -7,6 +7,9 @@ use Silex\ControllerProviderInterface;
 
 class SilexProvider implements ControllerProviderInterface
 {
+	public function __construct($Faculty){
+		$this->faculty = $Faculty;
+	};
     public function connect(Application $app)
     {
         // creates a new controller based on the default route

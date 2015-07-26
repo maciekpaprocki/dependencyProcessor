@@ -2,41 +2,17 @@
 
 Namespace ImageProfessor;
 
-
-
 Class Professor{
-
-	public static $declared = array();
 
 	public $name;
 
-	private $guardPath;
+	public $transformFunction;
 
-	private $transformFunction;
+	public function __construct($name, $transformFunction, $transformClass = '\Imanee\Imanee'){
 
-	private $cachePath;
-
-	private $linkCreationFunction;
-
-	public function __construct($name, $tranformFunction, $linkCreationFunction = null){
 		$this->name = $name;
-		$this->guardPath = $guardPath;
 		$this->transformFunction = $transformFunction;
-		$this->$cachePath = $cachePath;
-		if($linkCreationFunction === null){
-			$this->linkCreationFunction = function($path,$ob){
-				return $ob->cachePath . '/' . $ob->name .'/' . $path;
-			}
-		}else{
-			$this->linkCreationFunction = $linkCreationFunction;
-		}
+		$this->transformClass = $transformClass;
 	}
-
-	public function process($path = null){
-		if($path!=null){
-
-		}
-	}
-	
 	
 }
