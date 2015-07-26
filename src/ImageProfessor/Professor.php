@@ -1,18 +1,17 @@
 <?php
 
-Namespace ImageProfessor;
+namespace ImageProfessor;
 
-Class Professor{
+class Professor
+{
+    public $name;
 
-	public $name;
+    public $transformFunction;
 
-	public $transformFunction;
-
-	public function __construct($name, $transformFunction, $transformClass = '\Imanee\Imanee'){
-
-		$this->name = $name;
-		$this->transformFunction = $transformFunction;
-		$this->transformClass = $transformClass;
-	}
-	
+    public function __construct($name, $transformFunction, $transformClass = '\Imanee\Imanee')
+    {
+        $this->name = $name;
+        $this->transformFunction = $transformFunction;
+        $this->transformClass = $transformClass;
+    }
 }
