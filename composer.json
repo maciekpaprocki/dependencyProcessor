@@ -1,5 +1,5 @@
 {
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "name": "maciekpaprocki/imageprofessor",
     "description": "Independent image processor with routing and caching",
     "keywords": ["microframework","imageprocessing"],
