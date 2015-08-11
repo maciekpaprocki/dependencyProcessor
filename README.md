@@ -6,7 +6,7 @@ Instalation
 -------------------
 
 ```bash
-	composer install maciekpaprocki/imageProfessor
+	composer install maciekpaprocki/imageprofessor
 
 ```
 
