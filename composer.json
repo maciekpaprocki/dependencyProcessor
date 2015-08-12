@@ -1,6 +1,6 @@
 {
-    "minimum-stability": "dev",
-    "name": "maciekpaprocki/imageProfessor",
+    "minimum-stability": "stable",
+    "name": "maciekpaprocki/imageprofessor",
     "description": "Independent image processor with routing and caching",
     "keywords": ["microframework","imageprocessing"],
     "homepage": "http://paprocki.co.uk",
@@ -8,12 +8,11 @@
     "authors": [
         {
             "name": "Maciej Paprocki",
-            "email": "fabien@symfony.com"
+            "email": "maciekpaprocki@gmail.com"
         }
     ],
     "require": {
         "symfony/filesystem":"~2.7",
-
     },
     "require-dev":{
         "silex/silex": "~1.3",
